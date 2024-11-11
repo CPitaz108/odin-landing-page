@@ -8,7 +8,7 @@ html, body {
 }
 
 #header-bar, #signup, footer, #information, #quote, #cta {
-  padding: 1% 14%;
+  padding: 3% 14%;
 }
 
 .flex-nav {
@@ -209,4 +209,8 @@ footer {
 button:hover {
   background-color: #0b69ff;
   cursor: pointer;
+}
+
+header {
+  padding: 
 }

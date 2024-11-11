@@ -1,9 +1,24 @@
-html {
-  font-family: var(--font-overall)
+html, body {
+  font-family: var(--font-overall);
+  margin: 0px;
 }
 
 #header-bar, #signup {
   background-color: var(--dark-background-color);
+}
+
+#header-bar {
+  padding: 1% 14%;
+}
+
+.flex-nav {
+  display: flex;
+  width: 100%;
+  gap: 2%;
+}
+
+.link-item {
+  float: right;
 }
 
 .signup-maintext {
@@ -20,6 +35,8 @@ html {
 #header-bar h2{
   font-size: var(--header-logo-text-size);
   color: var(--header-logo-text-color);
+  margin: 0px;
+  flex: 1 1 50%;
 }
 
 /*Tied button color to the cte background via variables,

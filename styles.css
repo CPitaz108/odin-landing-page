@@ -12,6 +12,43 @@ html {
   font-weight: var(--hero-main-text-weight);
 }
 
+.signup-subtext, .link-item {
+  font-size: var(--secondary-text-size);
+  color: var(--secondary-text-color);
+}
+
+#header-bar h2{
+  font-size: var(--header-logo-text-size);
+  color: var(--header-logo-text-color);
+}
+
+/*Tied button color to the cte background via variables,
+but left them in separate selectors since they will likely 
+be used for other styles*/
+#cte {
+  background-color: var(--btn-color)
+}
+
+button {
+  background-color: var(--cta-background-color);
+}
+
+#information h2{
+  font-size: var(--info-header-text-size);
+  color: var(--info-header-text-color);
+  font-weight: var(--info-header-text-weight);
+}
+
+#quote {
+  background-color: var(--quote-section-background-color);
+}
+
+.quote-text {
+  font-size: var(--quote-text-size);
+  font-weight: var(--quote-text-weight);
+  color: var(--quote-text-color);
+}
+
 /* Creating variables to keep better track of given style constraints*/
 :root {
   --dark-background-color: #1F2937;

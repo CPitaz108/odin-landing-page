@@ -7,7 +7,7 @@ html, body {
   background-color: var(--dark-background-color);
 }
 
-#header-bar {
+#header-bar, #signup {
   padding: 1% 14%;
 }
 
@@ -15,6 +15,13 @@ html, body {
   display: flex;
   width: 100%;
   gap: 2%;
+}
+
+.flex-signup {
+  display: flex;
+  width: 100%;
+  gap: 5%;
+  justify-content: space-between;
 }
 
 .link-item {
@@ -48,6 +55,12 @@ be used for other styles*/
 
 button {
   background-color: var(--cta-background-color);
+  padding: 6px 0px;
+  color: white;
+  border-radius: 7px;
+  width: 100px;
+  font-weight: 600;
+  margin-top: 20px;
 }
 
 #information h2{

@@ -15,6 +15,7 @@ html, body {
   display: flex;
   width: 100%;
   gap: 2%;
+  justify-content: space-between;
 }
 
 .flex-signup {
@@ -36,6 +37,10 @@ html, body {
   justify-content: space-between;
 }
 
+.link-container {
+  align-content: center;
+}
+
 .info-item img {
   border: 5px solid var(--btn-color);
   border-radius: 30px / 30px;
@@ -45,6 +50,7 @@ html, body {
 .info-item {
  width: 25%;
 }
+
 
 /* Added media query for small screens */
 
@@ -62,6 +68,7 @@ html, body {
 
 .link-item {
   float: right;
+  padding: 0px 10px;  
 }
 
 .signup-maintext {
@@ -79,11 +86,10 @@ html, body {
   align-content: center;
 }
 
-#header-bar h2{
+.flex-nav h2{
   font-size: var(--header-logo-text-size);
   color: var(--header-logo-text-color);
   margin: 0px;
-  flex: 1 1 50%;
 }
 
 /*Tied button color to the cte background via variables,
@@ -186,4 +192,21 @@ footer {
   /*They say light, I assume they mean lighter font weight*/
   --quote-text-weight: lighter;
   --quote-text-color: #1F2937;
+}
+
+/* Pseudoclasses */
+
+.link-item:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.flex-nav h2:hover {
+  color: var(--quote-section-background-color);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0b69ff;
+  cursor: pointer;
 }

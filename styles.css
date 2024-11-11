@@ -7,7 +7,7 @@ html, body {
   background-color: var(--dark-background-color);
 }
 
-#header-bar, #signup {
+#header-bar, #signup, #information {
   padding: 1% 14%;
 }
 
@@ -22,6 +22,36 @@ html, body {
   width: 100%;
   gap: 5%;
   justify-content: space-between;
+}
+
+.flex-info {
+  display: flex;
+  width: 100%; 
+  justify-content: center;
+}
+
+.info-item img {
+  border: 5px solid var(--btn-color);
+  border-radius: 10px;
+  width: 200px;
+}
+
+.info-item {
+ width: 25%;
+}
+
+/* Added media query for small screens */
+
+@media screen and (max-width: 1200px){
+  .flex-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-item {
+    width: auto;
+    padding-bottom: 20px;
+  }
 }
 
 .link-item {
@@ -78,6 +108,12 @@ button {
   font-weight: var(--quote-text-weight);
   color: var(--quote-text-color);
 }
+
+#information {
+  text-align: center;
+}
+
+
 
 /* Creating variables to keep better track of given style constraints*/
 :root {
